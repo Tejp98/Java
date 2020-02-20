@@ -14,7 +14,7 @@ class Palindrome{
 			
 			
 			char[] input_array = input.toCharArray();
-			int[] check = new int[input_array.length+100];
+			int[] check = new int[input_array.length+100];//Trying to figure out why ArrayIndexOutofBound exception occurs, thats why added 100.
 			for(int i=0; i < input_array.length; i++){
 				check[input_array[i]] = check[input_array[i]] +1;
 
